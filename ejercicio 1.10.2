@@ -1,1 +1,21 @@
 #ejercicio 1.10.2
+  GNU nano 6.4                       New Buffer                       Modified
+# 1
+cut -f 1 ../data/Gesquiere_2011data.csv | grep -c -w 3
+# para el individuo 27, realizamos el mismo script pero cambio w 3  a w 27
+cut -f 1 ../data/Gesquiere_2011data.csv | grep -c -w 27
+#2
+# el script usado es similar al usado en le ejercicio, en este caso reemplazo l>
+# como entrada va el nombre del archivo (Gesquiere2011_data.csv) y como
+# como variable es el id
+cut -f 1 $1 | grep -c -w $
+# 17 es el numero de registro para el indivudo 8
+#3
+#uso for en el que se pide que se muestre la lista de todos los elementos excep>
+#el titulo, del archivo Gesquier y solo se use la columna 1 y que sea uniq
+IDS- tail -n +2 Gesquier2011_data.csv | cut -f 1 | sort -n | uniq
+for  id in $105
+do
+     mycounts -cut -f 1 Gesquier2011_data.csv | grep -c -w $id
+     echo "ID:" $counts:" $mycounts
+done
